@@ -1,7 +1,7 @@
 body {
-    background-color: #73c8a9;
+    background-color: #231a6f;
     font-family: 'Press Start 2P', cursive;
-    background-image: linear-gradient(to right, #73c8a9, #373b44);
+    background-image: linear-gradient(to right, #0c3f6b, #b0bcd8);
 }
 
 canvas {
@@ -13,16 +13,18 @@ canvas {
     background-image: url('assets/Flappy_Bird_Background.png');
     background-size: cover;
     background-repeat: no-repeat;
-    /* we will make the end menu overlap the game canvas, so we need here a lower z-index */
     z-index: 1;
 }
 
-.backdrop-blur {
-    filter: blur(5px);
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 
 #end-menu {
-    /* we will toggle then the display of the end-menu */
     display: none;
     margin: 50px auto;
     width: 200px;
@@ -32,13 +34,31 @@ canvas {
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
     z-index: 1000;
 }
 
+#inicio-menu {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    height: 60vh;
+    width: 70vw;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 #score-display {
-    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
     font-size: 2em;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -62,9 +82,6 @@ button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
 #button-container {
     display: flex;
     justify-content: center;
@@ -72,5 +89,4 @@ button:hover {
 
 #space-button {
     background-color: #333;
-  
 }
