@@ -54,6 +54,8 @@ document.getElementById('restart-button').addEventListener('click', function() {
 
 
 
+
+
 function increaseScore() {
     // increase now our counter when our flappy passes the pipes
     if(birdX > pipeX + PIPE_WIDTH && 

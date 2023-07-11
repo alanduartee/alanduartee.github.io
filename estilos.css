@@ -226,10 +226,7 @@ button:hover {
   top: 0;
   left: -100%;
 
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
+
 }
 
 .login-form-btn {
