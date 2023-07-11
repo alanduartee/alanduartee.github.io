@@ -1,30 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no"">
-    <link rel="stylesheet" href="style.css">
-    <title>Flappy Sonic</title>
-</head>
-<body>
-    <div class="container">
-        <div>
-        <div id="end-menu">
-            <h1>Game-over!</h1>
-            <p> Score: <span id="end-score"></span></p>
-            <p> Best: <span id="best-score"></span></p>
-            <button id="restart-button">Restart</button>
-        </div>
+<!doctype html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="#" />
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <title>Flappy Sonico</title>
+        <link rel="shortcut icon" href="img/cyt.png">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="plugins/sweetalert2/sweetalert2.min.css">        
+        
+        <link rel="stylesheet" type="text/css" href="fuentes/iconic/css/material-design-iconic-font.min.css">
+        
+    </head>
+    
+    <body>
+    <style>
+            .imagen-lateral {
+                top: 5; /* Ajusta el valor según tus necesidades */
+                left: 0;
+                width: 80px; /* Ajusta el ancho según tus necesidades */
+                height: auto; /* Ajusta la altura según tus necesidades */
+                margin-bottom: 30px;
+                margin-left: 35%;
+                margin-right: auto;
+            
+            }
+            .imagen-sonico {
+                top: 5; /* Ajusta el valor según tus necesidades */
+                left: 0;
+                width: 300px; /* Ajusta el ancho según tus necesidades */
+                height: auto; /* Ajusta la altura según tus necesidades */
+                margin-bottom: 30px;
+                margin-left: 2%;
+                margin-right: auto;
+            }
+    </style>
+      <div class="container-login">
+        
+        <div class="wrap-login">
 
-        <div id="game-container">
-            <div id="score-display">0</div>
-            <canvas id="game-canvas" width="400" height="600"></canvas>
+
+
+
+            <form class="login-form validate-form" id="formLogin" action="" method="post">
+            <img src="img/cyt_bueno con estrella_b.png" alt="Imagen lateral" class="imagen-lateral">
+                <span class="login-form-title">Flappy Sonico</span>
+                
+                <!-- <div class="wrap-input100" data-validate = "Usuario incorrecto">
+                    <input class="input100" type="text" id="usuario" name="usuario" placeholder="Usuario">
+                    <span class="focus-efecto"></span>
+                </div>
+                
+                <div class="wrap-input100" data-validate="Password incorrecto">
+                    <input class="input100" type="password" id="password" name="password" placeholder="Password">
+                    <span class="focus-efecto"></span>
+                </div>
+                 -->
+
+                 <img src="img/alto_sonicad.png" alt="Imagen lateral" class="imagen-sonico">
+
+
+
+                <div class="container-login-form-btn">
+                    <div class="wrap-login-form-btn">
+                        <div class="login-form-bgbtn"></div>
+
+                        <button class="login-form-btn" onclick="redirectToGame()">Jugar</button>
+
+
+                    </div>
+                </div>
+            </form>
+
+
             
         </div>
-    </div>
-    </div>
+
+
+
+    </div>     
     
-    <script src="game.js"></script>
-</body>
+    <script>
+        function redirectToGame() {
+            // Redireccionar a la página deseada
+            console.log("a");
+            window.location.href = "game.html";
+        }
+    </script>
+
+
+     <script src="jquery/jquery-3.3.1.min.js"></script>    
+     <script src="bootstrap/js/bootstrap.min.js"></script>    
+     <script src="popper/popper.min.js"></script>    
+        
+     <script src="plugins/sweetalert2/sweetalert2.all.min.js"></script>     
+    </body>
 </html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="#" />
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <title>Flappy Sonico</title>
+        <link rel="shortcut icon" href="img/cyt.png">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="plugins/sweetalert2/sweetalert2.min.css">        
+        
+        <link rel="stylesheet" type="text/css" href="fuentes/iconic/css/material-design-iconic-font.min.css">
+        
+    </head>
+    
+    <body>
+    <style>
+        .imagen-lateral {
+
+            top: 5; /* Ajusta el valor según tus necesidades */
+            left: 0;
+            width: 300px; /* Ajusta el ancho según tus necesidades */
+            height: auto; /* Ajusta la altura según tus necesidades */
+            margin-bottom: 30px;
+        }
+
+        .button-reset {
+            background-color: #2e2e2e;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1em;
+            padding: 15px 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.25s ease;
+
+        }
+    </style>
+      <div class="container-login">
+        
+        <div class="wrap-game">
+
+                
+                <!-- <div class="wrap-input100" data-validate = "Usuario incorrecto">
+                    <input class="input100" type="text" id="usuario" name="usuario" placeholder="Usuario">
+                    <span class="focus-efecto"></span>
+                </div>
+                
+                <div class="wrap-input100" data-validate="Password incorrecto">
+                    <input class="input100" type="password" id="password" name="password" placeholder="Password">
+                    <span class="focus-efecto"></span>
+                </div>
+                 -->
+
+                 <div class="container">
+                    <div>
+                    <div id="end-menu">
+                        <h1>Termino</h1>
+                        <p> Puntaje: <span id="end-score"></span></p>
+                        <p> Mejor: <span id="best-score"></span></p>
+                        <button id="restart-button" class="button-reset">Reanudar</button >
+                    </div>
+            
+                    <div id="game-container">
+                        <div id="score-display">0</div>
+                        <canvas id="game-canvas" width="400" height="600"></canvas>
+                        
+                    </div>
+                </div>
+                </div>
+                
+
+
+
+
+            
+        </div>
+
+
+
+
+
+    </div>     
+        
+        
+     <script src="jquery/jquery-3.3.1.min.js"></script>    
+     <script src="bootstrap/js/bootstrap.min.js"></script>    
+     <script src="popper/popper.min.js"></script>    
+
+     
+     
+     <script src="plugins/sweetalert2/sweetalert2.all.min.js"></script>    
+     <script src="codigo.js"></script>
+     <script src="game.js"></script>    
+    </body>
+</html>
