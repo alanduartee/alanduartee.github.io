@@ -5,14 +5,14 @@ const ctx = canvas.getContext("2d");
 const gameContainer = document.getElementById('game-container');
 
 const flappyImg = new Image();
-flappyImg.src = 'assets/flappy_dunk.png';
+flappyImg.src = 'img/sonic3.png';
 
 
 
 //Game constants
 const FLAP_SPEED = -3; //Improves the fluidity and accuracy of the bird when moving around the screen
 const BIRD_WIDTH = 40;
-const BIRD_HEIGHT = 30;
+const BIRD_HEIGHT = 70;
 const PIPE_WIDTH = 50;
 const PIPE_GAP = 125;
 
